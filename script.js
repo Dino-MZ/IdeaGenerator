@@ -1,5 +1,4 @@
-// this script makes a random idea generate with messy code
- // The Arrays
+// TODO: Improve this
 
 var heroType = ["a dinosaur ", "a truck ", "a rabbit ", "an alien ", "a robot ", "a shape ","a Polar bear ","a spider ","a skeleton "];
 var heroName = ["Dino ","Billy ","Qlop ","Mobasno ","Gargonzolan ","Eusebio ","Dewitt ","Eugenio ","Kozlowski ","Hyman ","Mckinnon ","Bernardo ","Alphonse ","BigMak "];
@@ -13,9 +12,8 @@ var typeAdj = ["horror ", "FPS ", "action ", "puzzle ", "platformer ", "tower de
 var pace = ["face-paced ", "slow-paced ", "fancy ", "slow-motion "];
 var Type = ["game "];
 
-// Calculating random number for the arrays to pick one
+// returns a random index in an array
  function Ran(Array) {
-    // it chooses a number between 0 and the the total indexes of the array and then returns the value
     var randonNum = Math.floor(Math.random() * Array.length);
     return randonNum;
 };
