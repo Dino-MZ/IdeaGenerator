@@ -1,3 +1,2 @@
-# Random-Idea-Generator
-Generate a random idea for game. (Inspired by Sebastian Lague's idea generator )
-This is my first HTML/CSS/JS project. Also I don;t know how to host this as a website :/ (yet)
+# Game-Idea-Generator
+A basic project that generates a random idea for game. (Inspired by Sebastian Lague's game idea generator)
