@@ -1,0 +1,48 @@
+body {
+    background-color : #4b5162;
+}
+h1{
+    color : #5294e2;
+    text-align : center;
+    background-color:#383c4a;
+    font-family: 'VT323', monospace;
+    font-size: 4em;
+}
+#Author {
+    color: #5294e2;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+
+h2 {
+    color: aquamarine;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+#About {
+    color: #5294e2;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+}
+#txtGen {
+    color: azure;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+    position : relative;
+    top : 60px;
+}
+#buttonContainer {
+    text-align: center;
+}
+#genButton {
+    color : aquamarine;
+    outline:none; 
+    border:none; 
+    background-color : #7c818c;
+    font-family: 'VT323', monospace;
+    font-size: 3em;
+}
