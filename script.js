@@ -9,8 +9,9 @@ var enemyAdj =  ["a fast ","a small ","a large ","a slow ","a powerful ","an int
 var heroVerb = ["lives in ", "explores ", "is a rebel in ", "defends ","invading ","destroys ","runs away to ","battles in "];
 var enemyVerb = ["is being invaded ", "is ruled ", "is dominated ", "has just been conquered ", "has been seiged "]; 
 var typeAdj = ["horror ", "FPS ", "action ", "puzzle ", "platformer ", "tower defense "];
-var pace = ["face-paced ", "slow-paced ", "fancy ", "slow-motion "];
+var pace = ["face-paced ", "slow-paced ", "", ""];
 var Type = ["game "];
+
 
 // returns a random index in an array
  function Ran(Array) {
