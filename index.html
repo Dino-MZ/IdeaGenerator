@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Game Idea Generator</title>
+        <title>Idea Generator</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
@@ -9,13 +9,25 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <h1>Game Idea Generator</h1>
-        <p id="Author">MZ-Dino<br></p>
+        <h1>Idea Generator</h1>
         <h2>About:</h2>
-        <p id="About">MZ Dino's Random Game Idea Generator! Click The Button To Generate A New Game Idea! <br></p>
-        <div id = "buttonContainer">
-            <input id="genButton" type="button" value = "GENERATE" onclick="GenerateIdea()">
+        <div id="about">
+            <div style="display: inline-block">Click the button to</div>
+            <div id="genText" style="display: inline-block"> GENERATE </div>
+            <div style="display: inline-block"> a new idea</div>
         </div>
-        <div id="txtGen"></div>
+        <div id = "buttonContainer">
+            <input id="genButton" type="button" value = "GENERATE" onclick="GenerateIdea()" onmouseover="OnHover('genButton')" onmouseleave="OnLeave('genButton')">
+        </div>
+        <div id="sentence">
+            <div id="type" style="display: inline-block"></div>
+            <div id="heroSpecial" style="display: inline-block"></div>
+            <div id="heroDesc" style="display: inline-block"></div>
+            <div id="heroVerb" style="display: inline-block"></div>
+            <br>
+            <div id="setting" style="display: inline-block"></div>
+            <div id="villan" style="display: inline-block"></div>
+            <div id="villanSpecial" style="display: inline-block"></div>
+        </div>
     </body>
 </html>
