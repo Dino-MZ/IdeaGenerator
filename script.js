@@ -52,10 +52,9 @@ const villanVerb = ["is being invaded", "is ruled", "is dominated", "has just be
 
 //#endregion
 
-const gameGenre = ["horror", "FPS", "action", "puzzle", "platformer", "tower defense"];
-const gamePace = ["face-paced", "slow-paced"];
+const gameGenre = ["A horror", "An action", "A puzzle", "A platformer", "A tower defense", "An adventure"];
 
-const type = ["Game", "Story"];
+const storyGenre = ["A horror", "A mystery", "A science fiction", "A fantasy", "An adventure"];
 
 //#endregion
 
@@ -110,12 +109,24 @@ function GetMultipleWordsOrLess(array, prefix, betweenWords, suffix, chance, max
 //#region Generate Functions
 
 function GenerateIdeaType() {
-    document.getElementById("type").innerHTML = "A " + GetRandomWord(type) + " about";
+    chance = 0.5;
+    let randonNum = Math.random();
+
+    if(chance > randonNum) {
+       GenerateGame();
+    }
+    else {
+        GenerateStory();
+    }
 };
 
-function GenerateGenre() {
-
+function GenerateGame() {
+    document.getElementById("type").innerHTML = GetRandomWord(gameGenre) + " Game about";
 };
+
+function GenerateStory() {
+    document.getElementById("type").innerHTML = GetRandomWord(storyGenre) + " Story about";
+}
 
 function GenerateHero() {
     document.getElementById("heroSpecial").innerHTML = GetRandomWord(heroType);
